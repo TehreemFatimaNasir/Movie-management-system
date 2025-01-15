@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+/* General Body Styling */
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
+    font-family: "Baskervville SC", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  .baskervville-sc-regular {
+    font-family: "Baskervville SC", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* Section Styling */
+  .section-bg {
+    background-color: #111; /* Darker background for sections */
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Section Title Styling */
+  .section-title h2 {
+    font-family: "DM Serif Text", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: -10px;
+  }
+  
+  .section-title h3 {
+    font-family: "DM Serif Text", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+  }
+  
+  .section-title h3 span {
+    color: #ccabab;
+  }
+  
+  form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields and select styling */
+  form input[type="text"],
+  form select,
+  form input[type="submit"] {
+    padding: 6px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    width: 100%;
+    transition: all 0.3s ease;
+    margin-left: 130px;
+    margin-top: 20px;
+    font-family: "Baskervville SC", system-ui;
+   
+    font-style: normal;
+  }
+  
+  /* Text input and select background */
+  form input[type="text"],
+  form select {
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Submit button styling */
+  form input[type="submit"] {
+    background-color: #6a1b1a; /* Bold, rich color */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect for the submit button */
+  form input[type="submit"]:hover {
+    background-color: #9c4e4e; /* Slightly lighter red on hover */
+    transform: translateY(-3px); /* Subtle lift effect */
+  }
+  
+  /* Focus effect for inputs and select */
+  form input[type="text"]:focus,
+  form select:focus {
+    border-color: #6a1b1a; /* Focus border with matching button color */
+    box-shadow: 0px 0px 5px rgba(106, 27, 26, 0.7);
+  }
+  
+  /* Label styling (for a more professional look) */
+  form label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Optional: Add some spacing between elements for clarity */
+  form .form-group {
+    margin-bottom: 25px;
+  }
+  
+/* Movie Card Styles */
+.movie-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    width: 590px; /* Increase card width */
+    height: 430px;
+    margin: 15px auto; /* Center the card and add space */
+}
+
+.movie-card-img {
+    position: relative;
+    height: 300px; /* Consistent height for all cards */
+    overflow: hidden;
+}
+
+.movie-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.movie-card-img:hover img {
+    transform: scale(1.1);
+}
+
+.movie-card-info {
+    padding: 10px;
+    text-align: center;
+}
+
+.movie-card-info h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.movie-card-info span {
+    display: block;
+    color: #aaa;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.movie-card-info .rating {
+    margin-top: 10px;
+}
+
+.rating i {
+    color: #ffd700; /* Golden star color */
+    font-size: 1.2rem;
+    margin: 0 3px;
+}
+
+.movie-card .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.movie-card-img:hover .overlay {
+    display: block;
+    opacity: 1;
+}
+
+.overlay .btn-primary {
+    padding: 10px 20px;
+    background-color:rgb(104, 17, 17);
+    border: none;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.overlay .btn-primary:hover {
+    background-color:rgb(145, 99, 99);
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.15);
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.carousel-item {
+  height: 500px;
+}
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
